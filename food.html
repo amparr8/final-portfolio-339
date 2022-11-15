@@ -22,9 +22,118 @@
     </header>
 
     <main>
-        <h2> Food</h2>
-        <img src = "food_images/Cochinillo Asado.webp" width="200" alt = "Cochinillo Asado">
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".seafood">Seafood</button>
+            <button type="button" class="control" data-filter=".vegetarian">Vegetarian</button>
+            <button type="button" class="control" data-filter=".meat">Meat</button>
+            <button type="button" class="control" data-filter="none">None</button>
+
+        </div>
+
+        <div class="container gallery">
+            <figure class = "pig meat" data-order ="Seafood">
+                <img src = "food_images/Cochinillo Asado.webp" width="200" alt = "Cochinillo Asado">
+                <figcaption>
+                    <ul>
+                        <li>1 6-pound suckling pig</li>
+                        <li>Salt, to taste</li>
+                        <li>Freshly ground black pepper, to taste</li>
+                        <li>1/2 cup Spanish olive oil</li>
+                        <li>1/2 cup (4 ounces) butter</li>
+                        <li>2 medium carrots</li>
+                        <li>1 medium yellow onion</li>
+                        <li>2 cups water</li>
+                    </ul>
+                </figcaption>
+            </figure>
+
+            <figure class = "gazpacho vegetarian" data-order = "Vegetarian">
+                <img src = "food_images/Gazpacho.webp" width = "200" alt = "Gazpacho">
+                <figcaption><ul>
+                    <li>1 lb large shrimp peeled and deveined</li>
+                    <li>Kosher salt</li>
+                    <li>1/2 cup extra virgin olive oil</li>
+                    <li>10 garlic cloves, chopped</li>
+                    <li>1 teaspoon red pepper flakes</li>
+                    <li>1 teaspoon paprika</li>
+                    <li>2 tablespoons dry sherry or dry white wine</li>
+                    <li>Juice of 1/2 lemon</li>
+                    <li>1/2 cup chopped fresh parsley</li>
+                </ul></figcaption>
+            </figure>
+    
+            <figure class="jamon meat" data-order = "5.29">
+                <img src = "food_images/jamon iberico.jpg" width="200" alt = "Jamon Iberico">
+                <figcaption>Decaf Latte $5.29</figcaption>
+
+            </figure> 
+
+            <figure class = "paella seafood" data-order = "4.29">
+                <img src = "food_images/Paella.jpg" width="200" alt = "Paella">
+                <figcaption>Dark $4.29</figcaption>
+
+            </figure> 
+
+            <figure class = "patatas vegetarian" data-order = "3.29">
+                <img src = "food_images/Patatas bravas.jpg" width="200" alt = "Patatas bravas">
+                <figcaption>Dark Decaf $3.29</figcaption>
+
+            </figure> 
+
+            <figure class = "pisto vegetarian" data-order = "5.99">
+                <img src = "food_images/Pisto.jpg" width="200" alt = "Pisto">
+                <figcaption>Latte $5.99</figcaption>
+
+            </figure> 
+
+            <figure class = "tortilla española vegetarian" data-order = "1.99">
+                <img src = "food_images/Tortilla Española.webp" width="200" alt = "Tortilla Española">
+                <figcaption>Decaf $1.99</figcaption>
+
+            </figure> 
+
+            <figure class = "tostas meat" data-order = "1.99">
+                <img src = "food_images/Tostas de tomate y jamon.jpg" width="200" alt = "Tostas">
+                <figcaption>Decaf $1.99</figcaption>
+
+            </figure> 
+
+            <figure class = "turrón vegetarian" data-order = "1.99">
+                <img src = "food_images/Turrón.jpg" width="200" alt = "Turrón">
+                <figcaption>Decaf $1.99</figcaption>
+
+            </figure> 
+
+
+        </div>
+        <!-- <h2> Food</h2>
+        <div class="pig-image" id="pig">
+            <img src = "food_images/Cochinillo Asado.webp" width="200" alt = "Cochinillo Asado">
+        </div>
+
+        <div class="pig text-block">
+            <ul>
+                <li>1 6-pound suckling pig</li>
+                <li>Salt, to taste</li>
+                <li>Freshly ground black pepper, to taste</li>
+                <li>1/2 cup Spanish olive oil</li>
+                <li>1/2 cup (4 ounces) butter</li>
+                <li>2 medium carrots</li>
+                <li>1 medium yellow onion</li>
+                <li>2 cups water</li>
+            </ul>
+        </div>
         <img src = "food_images/Gambas al ajillo.jpg" width="200" alt = "Gambas">
+        <p>1 lb large shrimp peeled and deveined
+            ▢Kosher salt
+            ▢½ cup extra virgin olive oil
+            ▢10 garlic cloves, chopped
+            ▢1 teaspoon red pepper flakes (start with less if you don't want it too spicy)
+            ▢1 teaspoon paprika
+            ▢2 tablespoons dry sherry or dry white wine
+            ▢Juice of ½ lemon
+            ▢½ cup chopped fresh parsley</p>
         <img src = "food_images/Gazpacho.webp" width = "200" alt = "Gazpacho">
         <img src = "food_images/jamon iberico.jpg" width="200" alt = "Jamon Iberico">
         <img src = "food_images/Paella.jpg" width="200" alt = "Paella">
@@ -32,7 +141,7 @@
         <img src = "food_images/Pisto.jpg" width="200" alt = "Pisto">
         <img src = "food_images/Tortilla Española.webp" width="200" alt = "Tortilla Española">
         <img src = "food_images/Tostas de tomate y jamon.jpg" width="200" alt = "Tostas">
-        <img src = "food_images/Turrón.jpg" width="200" alt = "Turrón">
+        <img src = "food_images/Turrón.jpg" width="200" alt = "Turrón"> -->
         
         <div id ="main" class="about-food" tabindex="0">
             <h2>About Food In Spain</h2>
