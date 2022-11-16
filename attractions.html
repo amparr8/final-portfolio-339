@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Tourist Attractions</title>
 </head>
 <body>
@@ -17,27 +20,49 @@
                 <li><a href = "festivals.html" >Festivals</a></li>
             </ul>
         </nav>
-        <h1>Things To Do</h1>
+        <h1>Attractions</h1>
 
     </header>
 
-    <main>
-        <h2> Attractions</h2>
-        <img src = "attractions_images/alhambra_palace.jpg" width="200" alt = "Alhambra Palace">
-        <img src = "attractions_images/cuenca_cathedral.jpg" width="200" alt = "Cuenca Cathedral">
-        <img src = "attractions_images/El_Alcázar_de_Segovia.jpg" width = "200" alt = "El Alcázar de Segovia">
-        <img src = "attractions_images/el_escorial.jpg" width="200" alt = "El Escorial">
-        <img src = "attractions_images/ibiza_beaches.jpg" width="200" alt = "Ibiza Beaches">
-        <img src = "attractions_images/la_sagrada_familia.jpg" width="200" alt = "La Sagrada Familia">
-        <img src = "attractions_images/mosque_cathedral.jpg" width="200" alt = "Mosque Cathedral">
-        <img src = "attractions_images/Museo del Prado, Madrid.webp" width="200" alt = "Museo del Prado">
-        <img src = "attractions_images/park_güell.jpg" width="200" alt = "Park Güell">
-        <img src = "attractions_images/Plaza Mayor, Madrid.webp" width="200" alt = "Plaza Mayor">
+    <main class = "gallery">
+        <a href = "attractions_images/alhambra_palace.jpg" target="_blank" 
+        data-lightbox = "attractions" 
+        data-title = "Granada, Andalusia, Spain"
+        data-alt = "Alhambra Palace">
+            <img src="attractions_images/alhambra_palace.jpg" width = "400" alt="Alhambra Palace">
+        </a>
+
+
+STOPPED HERE 
+        <main>
+            <h2> Top 10 Attractions to Visit</h2>
+            <img src = "attractions_images/alhambra_palace.jpg" width="200" alt = "Alhambra Palace">
+            <img src = "attractions_images/cuenca_cathedral.jpg" width="200" alt = "Cuenca Cathedral">
+            <img src = "attractions_images/El_Alcázar_de_Segovia.jpg" width = "200" alt = "El Alcázar de Segovia">
+            <img src = "attractions_images/el_escorial.jpg" width="200" alt = "El Escorial">
+            <img src = "attractions_images/ibiza_beaches.jpg" width="200" alt = "Ibiza Beaches">
+            <img src = "attractions_images/la_sagrada_familia.jpg" width="200" alt = "La Sagrada Familia">
+            <img src = "attractions_images/mosque_cathedral.jpg" width="200" alt = "Mosque Cathedral">
+            <img src = "attractions_images/Museo del Prado, Madrid.webp" width="200" alt = "Museo del Prado">
+            <img src = "attractions_images/park_güell.jpg" width="200" alt = "Park Güell">
+            <img src = "attractions_images/Plaza Mayor, Madrid.webp" width="200" alt = "Plaza Mayor">
+
+    
         
         <div id ="main" class="about-attractions" tabindex="0">
             <h2>About Attractions In Spain</h2>
             <p>These are some of the most popular attractions in Spain.</p>
           </div>
     </main>
+
+
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 2000,
+          'wrapAround': true
+        })
+    </script>
+
 </body>
 </html>
