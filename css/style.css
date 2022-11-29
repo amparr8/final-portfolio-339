@@ -1,3 +1,262 @@
 html{
     scroll-behavior:smooth;
 }
+
+header{
+    display: block;
+}
+
+nav{
+    display: block;
+    background-color: #ed2532;
+    padding: 25px 0; 
+    text-align: left;
+    padding-left: 40px;
+}
+
+nav li{
+    display:inline;
+    padding-right:20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav a:hover{
+    color: black;
+}
+  
+nav a{
+    color: #fff5d7;
+    /* font-weight: bold; */
+    font-size: 20px;
+    text-decoration: underline; 
+}
+
+.skip a{
+    position: absolute;
+    top: -40px;
+}
+  
+.skip a:focus{
+    top: 30px;
+    right: 20px;
+}
+
+footer{
+    background-color:#ed2532;
+    color: #fff5d7;;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #fff5d7;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #ed2532;
+    background-color: rgba(255, 217, 0, 0.905);
+    padding: 30px;
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.container{
+    color: #fff5d7;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button.control{
+    background-color: #ed2532;
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    border-color:#ed2532;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* text-align: center;
+    margin: auto; */
+    /* right: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); */
+}
+
+.pig, .gazpacho, .jamon, .paella, .patatas, .pisto, .tortilla, .tostas, .turrón, .gambas{
+    background-color: #ed2532;
+    overflow: scroll;
+    padding: 15px;
+    border-radius: 20px;
+    width: 300px;
+    height: min-content;
+}
+
+.pig p, .gazpacho p, .jamon p, .paella p, .patatas p, .pisto p, .tortilla p, .tostas p, .turrón p, .gambas p{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5px;;
+}
+
+.container-gallery{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    /* grid-template-rows: repeat(10, 1fr); */
+    place-items: center;
+}
+
+.about-food{
+    color: #ed2532;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 2px #ed2532 solid;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 217, 0, 0.905);
+    padding: 8px;
+}
+
+.about-food h2{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* index/home page */
+.pics-of-us h2{
+    background-color: #ed2532;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #fff5d7;
+    text-align: center;
+    font-weight: bolder;
+}
+.pics-of-us img{
+    margin: 20px;
+    border: #ed2532 5px solid;
+}
+.about-us h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.about-us{
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ed2532;
+    padding: 30px;
+    color: #fff5d7;
+    line-height: 20px;
+    text-align: center;
+}
+
+.seperate{
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(255, 217, 0, 0.905);
+    padding: 20px;
+}
+@media screen and (min-width: 800px){
+    .container-gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .pig, .gazpacho, .jamon, .paella, .patatas, .pisto, .tortilla, .tostas, .turrón, .gambas{
+        background-color: #ed2532;
+        height: 500px;
+        overflow: scroll;
+        padding: 15px;
+        width: 300px;
+        border-radius: 20px;
+    }
+
+}
+@media screen and (min-width: 1200px){
+
+    .container-gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .pig, .gazpacho, .jamon, .paella, .patatas, .pisto, .tortilla, .tostas, .turrón, .gambas{
+        background-color: #ed2532;
+        height: 500px;
+        overflow: scroll;
+        padding: 15px;
+        width: 300px;
+        border-radius: 20px;
+    }
+
+    .pig p, .gazpacho p, .jamon p, .paella p, .patatas p, .pisto p, .tortilla p, .tostas p, .turrón p, .gambas p{
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+.gallery img{
+    border: 5px #ed2532 solid;
+}
+
+/* .festival_imgs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+/* .festival_imgs > div{
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
+} */
+/* .festival_imgs li, .festival_imgs ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+} */ 
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.festival{
+    width: 400px;
+    margin: 10px;
+    text-align: left;
+    font-size: 17px;
+    background-color: #ed2532;
+}
+
+.festival h3{
+    text-decoration: underline;
+}
+
+.flex-container > div{
+    border: solid 2px #ed2532;
+    padding: 20px;
+    align-items: center;
+    color: #fff5d7;
+}
