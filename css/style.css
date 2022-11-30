@@ -7,7 +7,6 @@ header{
 }
 
 nav{
-    display: block;
     background-color: #ed2532;
     padding: 25px 0; 
     text-align: left;
@@ -15,8 +14,11 @@ nav{
 }
 
 nav li{
-    display:inline;
+    display: flex;
+    line-height: 30px;
+    flex-direction: column;
     padding-right:20px;
+    align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -26,9 +28,8 @@ nav a:hover{
   
 nav a{
     color: #fff5d7;
-    /* font-weight: bold; */
     font-size: 20px;
-    text-decoration: underline; 
+    text-decoration: unset;
 }
 
 .skip a{
@@ -79,16 +80,23 @@ button.control{
     border-radius: 8px;
     border-color:#ed2532;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 10px;
-    margin-right: 0px;
+    margin-right: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* text-align: center;
-    margin: auto; */
-    /* right: 50%;
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%); */
+}
+
+.controls{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-around;
+    align-items: center;
+}
+
+element.style{
+    display: grid;
+    justify-content: center;
 }
 
 .pig, .gazpacho, .jamon, .paella, .patatas, .pisto, .tortilla, .tostas, .turrón, .gambas{
@@ -145,6 +153,7 @@ button.control{
     margin: 20px;
     border: #ed2532 5px solid;
 }
+
 .about-us h3{
     font-size: 20px;
     margin-bottom: 5px;
@@ -165,24 +174,175 @@ button.control{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(255, 217, 0, 0.905);
     padding: 20px;
+
 }
+.seperate p{
+    margin-bottom: 20px;
+}
+.seperate h3{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.gallery img{
+    border: 5px #ed2532 solid;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 30px;
+}
+.click-pic{
+    color:#fff5d7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 2px #ed2532 solid;
+    margin: 10px;
+    font-size: 20px;
+    background-color:#ed2532;
+    padding: 8px;
+}
+.about-attractions{
+    color: #ed2532;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 2px #ed2532 solid;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 217, 0, 0.905);
+    padding: 8px;
+}
+
+.about-attractions h2{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.festival{
+    width: 400px;
+    margin: 10px;
+    text-align: left;
+    font-size: 17px;
+    background-color: #ed2532;
+}
+
+.festival h3{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.festival{
+    border: solid 2px #ed2532;
+    padding: 20px;
+    align-items: center;
+    color: #fff5d7;
+}
+
+.about-festivals{
+    color: #ed2532;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 2px #ed2532 solid;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 217, 0, 0.905);
+    padding: 8px;
+}
+
+.about-festivals h2{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*for active nav */
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Style the active class (and buttons on mouse-over) */
+  .active, .btn:hover {
+    background-color: #fff5d7;
+    color:#ed2532;
+    font-weight: bold;
+    border: 6px #ffd900e7;
+    border-radius: 20px;
+  }
+
+  .home_container{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-gap: 15px;
+    justify-items: center;
+
+}
+
+.home_container h2{
+    font-size: 30px;
+}
+
 @media screen and (min-width: 800px){
+
+    nav{
+        display: block;
+        background-color: #ed2532;
+        padding: 25px 0; 
+        text-align: left;
+        padding-left: 40px;
+    }
+    
+    nav li{
+        display:inline;
+        padding-right:20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
     .container-gallery{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
     .pig, .gazpacho, .jamon, .paella, .patatas, .pisto, .tortilla, .tostas, .turrón, .gambas{
-        background-color: #ed2532;
+        background-color: rgba(255, 217, 0, 0.905);
         height: 500px;
         overflow: scroll;
         padding: 15px;
         width: 300px;
         border-radius: 20px;
+        color:#ed2532
     }
 
+    .gallery img{
+        border: 10px solid rgba(255, 217, 0, 0.905);
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        margin: 30px;
+    }
+
+
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1000px){
 
     .container-gallery{
         display: grid;
@@ -197,66 +357,32 @@ button.control{
         padding: 15px;
         width: 300px;
         border-radius: 20px;
+        color:#fff5d7
     }
 
     .pig p, .gazpacho p, .jamon p, .paella p, .patatas p, .pisto p, .tortilla p, .tostas p, .turrón p, .gambas p{
         font-size: 25px;
         font-weight: bold;
     }
-}
-.gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-}
-.gallery img{
-    border: 5px #ed2532 solid;
-}
 
-/* .festival_imgs{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start; 
-    flex-wrap: wrap; 
-    align-items: center;
-}
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery img{
+        border: 10px solid black;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin: 30px;
+    }
 
-/* .festival_imgs > div{
-    display: flex; 
-    justify-content: flex-end;
-    align-items: center;
-    flex-flow: row wrap;
-} */
-/* .festival_imgs li, .festival_imgs ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: flex-end;
-} */ 
+    .gallery a:last-child{
+        grid-column: 2/3;
+    }
 
-.flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.festival{
-    width: 400px;
-    margin: 10px;
-    text-align: left;
-    font-size: 17px;
-    background-color: #ed2532;
-}
-
-.festival h3{
-    text-decoration: underline;
-}
-
-.flex-container > div{
-    border: solid 2px #ed2532;
-    padding: 20px;
-    align-items: center;
-    color: #fff5d7;
+    .gambas{
+        grid-column: 2/3;
+    }
 }
