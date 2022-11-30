@@ -149,10 +149,28 @@ element.style{
     text-align: center;
     font-weight: bolder;
 }
+
+.pics{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+}
+
 .pics-of-us img{
     margin: 20px;
-    border: #ed2532 5px solid;
+    /* border: #ed2532 5px solid; */
 }
+
+.pics{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    /* height: 400px;                Parallax effect */
+    background-image: url("../attractions_images/alhambra_palace.jpg");
+    background-repeat:no-repeat;
+} 
 
 .about-us h3{
     font-size: 20px;
@@ -165,7 +183,7 @@ element.style{
     background-color: #ed2532;
     padding: 30px;
     color: #fff5d7;
-    line-height: 20px;
+    line-height: 22px;
     text-align: center;
 }
 
@@ -174,16 +192,19 @@ element.style{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(255, 217, 0, 0.905);
     padding: 20px;
-
+    line-height: 22px;
 }
 .seperate p{
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    text-align: center;
 }
 .seperate h3{
     text-align: center;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
+
 
 .gallery{
     display: grid;
@@ -317,6 +338,21 @@ element.style{
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
+    .pics-of-us img{
+        width: 300px;
+    }
+
+    .pics{
+        background-attachment: fixed; /* Parallax effect */     
+        background-position: center;  /* Parallax effect */
+        background-repeat: no-repeat; /* Parallax effect */
+        background-size: cover;       /* Parallax effect */
+        color: white;
+        /* height: 400px;                Parallax effect */
+        background-image: url("../attractions_images/ibiza_beaches.jpg");
+        background-repeat:no-repeat;
+    } 
+
     .container-gallery{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -344,12 +380,26 @@ element.style{
 }
 @media screen and (min-width: 1000px){
 
+    .pics-of-us img{
+        width: 400px;
+    }
+
     .container-gallery{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
 
+    .pics{
+        background-attachment: fixed; /* Parallax effect */     
+        background-position: center;  /* Parallax effect */
+        background-repeat: no-repeat; /* Parallax effect */
+        background-size: cover;       /* Parallax effect */
+        color: white;
+        /* height: 400px;                Parallax effect */
+        background-image: url("../attractions_images/la_sagrada_familia.jpg");
+        background-repeat:no-repeat;
+    } 
     .pig, .gazpacho, .jamon, .paella, .patatas, .pisto, .tortilla, .tostas, .turrón, .gambas{
         background-color: #ed2532;
         height: 500px;
